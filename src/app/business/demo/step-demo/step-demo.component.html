@@ -1,0 +1,56 @@
+<div class="c-content-inner">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="c-line-title">示例</p>
+    </div>
+  </div>
+
+  <div class="row c-mt15">
+    <div class="col-md-12">
+      <app-step #step [data]='stepData' [stepType]='stepType' [actionable]='actionable' [itemWidth]='itemWidth'
+                (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></app-step>
+      <br/>
+      <app-step #step [data]='stepData' [stepType]='stepType2' [actionable]='actionable' [itemWidth]='itemWidth'
+                (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></app-step>
+      <br/>
+      <app-step #step [data]='stepData' [stepType]='stepType3' [actionable]='actionable' [itemWidth]='itemWidth'
+                (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></app-step>
+      <br/>
+      <app-step #step [data]='stepData' [stepType]='stepType4' [actionable]='actionable' [itemWidth]='itemWidth'
+                (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></app-step>
+      <br/>
+      <app-step #step [data]='stepData' [stepType]='stepType5' [actionable]='actionable' [itemWidth]='itemWidth'
+                (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></app-step>
+      <br/>
+      <app-step #step [data]='stepData' [stepType]='stepType6' [actionable]='actionable' [itemWidth]='itemWidth'
+                (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></app-step>
+      <br/>
+      <app-step #step [data]='stepData' [stepType]='stepType7' [actionable]='actionable' [itemWidth]='itemWidth'
+                (onClick)="onClick($event)"
+                (onNext)='onNext($event)' (onPrevious)='onPrevious($event)'></app-step>
+      <br/>
+      <div>
+        <button type="button" class="btn btn-success" (click)="next()">下一步</button>
+        <button type="button" class="btn btn-primary" (click)="previous()">上一步</button>
+        <button type="button" class="btn btn-danger" (click)="setIndex()">修改currentIndex</button>
+      </div>
+      <br/>
+      <app-step #step [data]='stepData2'></app-step>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="c-mt15">
+        <p class="c-line-title">说明</p>
+        组件目录:src/app/modules/shared/step
+      </div>
+    </div>
+  </div>
+</div>
